@@ -1,14 +1,15 @@
 #include <iostream>
 using namespace std;
 
-struct area
+struct retangulo
 {
   float altura;
   float largura;
-} retangulo;
+};
 
 int main()
 {
+  retangulo figura;
 
   cout << "Digite a altura: " << endl;
   float altura;
@@ -17,10 +18,10 @@ int main()
   float largura;
   cin >> largura;
 
-  retangulo.altura = altura;
-  retangulo.largura = largura;
+  figura.altura = altura;
+  figura.largura = largura;
 
-  cout << "Area do Retangulo: " << retangulo.altura * retangulo.largura;
+  cout << "Area do retangulo: " << figura.altura * figura.largura << endl;
 
   return 0;
 }
