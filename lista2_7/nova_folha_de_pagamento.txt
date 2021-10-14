@@ -1,0 +1,4 @@
+Victor 10500 4
+Gabriel 9600 2
+Joaquim 11000 1
+Sebastião 4550 3
