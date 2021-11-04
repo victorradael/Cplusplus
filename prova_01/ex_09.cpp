@@ -1,10 +1,10 @@
 #include <iostream>
 #include <sstream>
 #include <fstream>
-#include <vector>
+#include <list>
 using namespace std;
 
-void split(string linha, char at, vector<string> nbs[])
+void split(string linha, char at, string nbs[])
 {
   int pos = 0, fim, i = 0;
 
@@ -13,7 +13,7 @@ void split(string linha, char at, vector<string> nbs[])
     fim = linha.find(at, pos);
     if (fim == -1)
     {
-      nbs.insert(nbs.begin() + pos) = linha.substr(pos);
+      nbs[i] = linha.substr(pos);
     }
     else
     {
@@ -31,7 +31,7 @@ int main()
   char ch;
 
   string linha;
-  vector<string> nbs;
+  string nbs[1000];
 
   if (arquivo.is_open())
   {
@@ -46,11 +46,11 @@ int main()
 
   for (int i = 0; i < 1000; i++)
   {
-    cout << nbs[i] << endl;
-    // if (maior < stoi(nbs[i]))
-    // {
-    //   maior = stoi(nbs[i]);
-    // }
+    cout << nbs[i];
+    if (maior < stoi(nbs[i]))
+    {
+      maior = stoi(nbs[i]);
+    }
   }
   cout << "O maior número " << maior << endl;
 }
