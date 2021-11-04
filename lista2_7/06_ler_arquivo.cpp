@@ -25,9 +25,6 @@ void split(string linha, char at, string nbs[])
 
 int main()
 {
-  cout << "-----------------------------" << endl;
-  cout << "| Bem-vindos ao meu leitor! |" << endl;
-  cout << "-----------------------------" << endl;
 
   ifstream arquivo;
   arquivo.open("texto.txt");
