@@ -1,0 +1,21 @@
+10
+Contador Seleção: 45
+Contador Inserção: 45
+Contador Quicksorte: 11
+
+100
+Contador Seleção: 4950
+Contador Inserção: 4891
+Contador Quicksorte: 113
+
+1000
+Segmentation fault (core dumped)
+
+10000
+Segmentation fault (core dumped)
+
+100000
+Segmentation fault (core dumped)
+
+1000000
+Segmentation fault (core dumped)
