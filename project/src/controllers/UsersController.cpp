@@ -1,5 +1,5 @@
 #include <iostream>
-#include "../services/CreateUserService.cpp"
+#include "../global/users/usersServices.h"
 using namespace std;
 
 void registerUser()
@@ -21,6 +21,6 @@ void registerUser()
   cout << "Digite seu numero de telefone:" << endl;
   cin >> phoneNumber;
 
-  createUser(name, email, password, phoneNumber);
+  createUser(email, name, phoneNumber);
   return;
 }

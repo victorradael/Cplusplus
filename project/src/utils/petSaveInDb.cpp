@@ -1,11 +1,10 @@
 #include <iostream>
 #include <fstream>
 #include <list>
-#include "../user.h"
-#include "../split.h"
+#include "../global/pets/pet.h"
 using namespace std;
 
-int saveIntoFile(User user)
+int petSaveInDb(Pet pet)
 {
   ifstream inFile("./documents/registers.csv");
 
@@ -24,7 +23,7 @@ int saveIntoFile(User user)
   inFile.close();
 
   ofstream outFile;
-  outFile.open("./documents/registers.csv");
+  outFile.open("./documents/pets_db.csv");
   outFile.is_open();
   if (!outFile)
   {
@@ -37,7 +36,7 @@ int saveIntoFile(User user)
     outFile << line << '\n';
   }
 
-  outFile << user.name << ";" << user.email << ";" << user.password << ";" << user.phoneNumber << '\n';
+  outFile << pet.petOwnerEmail << ";" << pet.name << ";" << pet.gender << pet.age << '\n';
   outFile.close();
 
   return 0;
