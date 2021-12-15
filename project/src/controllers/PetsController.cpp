@@ -1,5 +1,6 @@
 #include <iostream>
 #include "../global/pets/petsServices.h"
+#include "../global/users/usersServices.h"
 using namespace std;
 
 void registerPet()
@@ -9,8 +10,17 @@ void registerPet()
   string gender;
   string age;
 
+  string condition;
+
   cout << "Digite o email do dono do pet:" << endl;
   cin >> petOwnerEmail;
+  condition = checkIfUserExists(petOwnerEmail);
+  if (condition == "NOT FOUND")
+  {
+    cout << "USER NOT EXISTS!" << endl;
+    cout << "Use a valid email to register a pet." << endl;
+    return;
+  }
 
   cout << "Digite o nome do pet:" << endl;
   cin >> name;

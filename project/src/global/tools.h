@@ -4,5 +4,8 @@
 #include "../utils/split.cpp"
 #include "../utils/userSaveInDb.cpp"
 #include "../utils/petSaveInDb.cpp"
+#include "../utils/verifyIfEmailExists.cpp"
+#include "../utils/returnStructUserFromDb.cpp"
+#include "../utils/returnStructPetsListFromDb.cpp"
 
 #endif

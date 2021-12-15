@@ -6,7 +6,7 @@ using namespace std;
 
 int petSaveInDb(Pet pet)
 {
-  ifstream inFile("./documents/registers.csv");
+  ifstream inFile("./documents/pets_db.csv");
 
   string line;
   list<string> lines;
@@ -36,7 +36,7 @@ int petSaveInDb(Pet pet)
     outFile << line << '\n';
   }
 
-  outFile << pet.petOwnerEmail << ";" << pet.name << ";" << pet.gender << pet.age << '\n';
+  outFile << pet.petOwnerEmail << ";" << pet.name << ";" << pet.gender << ";" << pet.age << '\n';
   outFile.close();
 
   return 0;

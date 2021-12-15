@@ -1,9 +1,9 @@
 #include <iostream>
-#include "../global/tools.h"
-#include "../global/users/user.h"
+#include "../../global/tools.h"
+#include "../../global/users/user.h"
 using namespace std;
 
-void createUser(string name, string email, string phoneNumber)
+void createUser(string email, string name, string phoneNumber)
 {
   User user;
   user.email = email;

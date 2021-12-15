@@ -1,6 +1,6 @@
 #include <iostream>
-#include "../global/tools.h"
-#include "../global/pets/pet.h"
+#include "../../global/tools.h"
+#include "../../global/pets/pet.h"
 using namespace std;
 
 void createPet(string email, string name, string gender, string age)

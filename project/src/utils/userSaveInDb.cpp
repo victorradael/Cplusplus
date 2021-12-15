@@ -6,7 +6,7 @@ using namespace std;
 
 int userSaveInDb(User user)
 {
-  ifstream inFile("./documents/registers.csv");
+  ifstream inFile("./documents/users_db.csv");
 
   string line;
   list<string> lines;
@@ -23,11 +23,11 @@ int userSaveInDb(User user)
   inFile.close();
 
   ofstream outFile;
-  outFile.open("./documents/registers.csv");
+  outFile.open("./documents/users_db.csv");
   outFile.is_open();
   if (!outFile)
   {
-    cout << "Arquivo register.csv nao pode ser aberto" << endl;
+    cout << "Arquivo users_db.csv nao pode ser aberto" << endl;
     abort();
   }
 

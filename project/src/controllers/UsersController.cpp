@@ -6,17 +6,21 @@ void registerUser()
 {
   string name;
   string email;
-  string password;
   string phoneNumber;
-
-  cout << "Digite seu nome:" << endl;
-  cin >> name;
+  string condition;
 
   cout << "Digite seu email:" << endl;
   cin >> email;
+  condition = checkIfUserExists(email);
+  if (condition != "NOT FOUND")
+  {
+    cout << "USER ALREADY EXISTS!" << endl;
+    cout << "Use another email address to register a new user." << endl;
+    return;
+  }
 
-  cout << "Digite sua senha:" << endl;
-  cin >> password;
+  cout << "Digite seu nome:" << endl;
+  cin >> name;
 
   cout << "Digite seu numero de telefone:" << endl;
   cin >> phoneNumber;

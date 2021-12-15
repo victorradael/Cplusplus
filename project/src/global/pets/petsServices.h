@@ -2,5 +2,6 @@
 #define PETSERVICES_H
 
 #include "../../services/pets/CreatePetService.cpp"
+#include "../../services/pets/FindPetsByOwnerEmailService.cpp"
 
 #endif
