@@ -4,5 +4,6 @@
 #include "../../services/users/CreateUserService.cpp"
 #include "../../services/users/CheckIfUserExistsService.cpp"
 #include "../../services/users/FindUserByEmailService.cpp"
+#include "../../services/users/UpdateUserService.cpp"
 
 #endif

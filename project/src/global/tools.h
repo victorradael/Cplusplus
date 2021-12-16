@@ -7,5 +7,6 @@
 #include "../utils/verifyIfEmailExists.cpp"
 #include "../utils/returnStructUserFromDb.cpp"
 #include "../utils/returnStructPetsListFromDb.cpp"
+#include "../utils/alterUserData.cpp"
 
 #endif
