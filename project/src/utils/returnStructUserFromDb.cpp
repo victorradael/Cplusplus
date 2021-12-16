@@ -12,7 +12,7 @@ User returnStructUserFromDb(string email)
   ifstream inFile(dbPath);
 
   string line;
-  string arrLine[4];
+  string arrLine[3];
   list<string> lines;
   int count = 0;
 
@@ -29,15 +29,13 @@ User returnStructUserFromDb(string email)
     }
   }
   User user;
-
-  string userArrLine[4];
-
+  string UserArrLine[3];
   for (auto const &line : lines)
   {
-    split(line, ';', arrLine);
-    user.email = arrLine[0];
-    user.name = arrLine[1];
-    user.phoneNumber = arrLine[2];
+    split(line, ';', UserArrLine);
+    user.email = UserArrLine[0];
+    user.name = UserArrLine[1];
+    user.phoneNumber = UserArrLine[2];
   }
 
   return user;
