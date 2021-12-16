@@ -9,5 +9,6 @@
 #include "../utils/returnStructPetsListFromDb.cpp"
 #include "../utils/alterUserData.cpp"
 #include "../utils/alterPetData.cpp"
+#include "../utils/ordenationMethods.cpp"
 
 #endif

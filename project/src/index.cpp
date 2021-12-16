@@ -30,6 +30,10 @@ int main(int argc, char const *argv[])
                << "6- Buscar Pets do Usuario"
                << " |" << endl;
           cout << "-----------------------------" << endl;
+          cout << "| "
+               << "7- Gerar a Lista de Castratacao   "
+               << " |" << endl;
+          cout << "-----------------------------" << endl;
           cout << endl;
           cout << "Digite o numero correspondente a atividade que deseja executar: ";
           cin >> option;
@@ -54,6 +58,9 @@ int main(int argc, char const *argv[])
 
           case 6:
                findPetsByUser();
+               break;
+          case 7:
+               generateCastrationList();
                break;
 
           default:

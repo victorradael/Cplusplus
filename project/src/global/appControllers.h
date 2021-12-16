@@ -3,5 +3,6 @@
 
 #include "../controllers/PetsController.cpp"
 #include "../controllers/UsersController.cpp"
+#include "../utils/generateCastrationList.cpp"
 
 #endif
