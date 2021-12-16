@@ -8,5 +8,6 @@
 #include "../utils/returnStructUserFromDb.cpp"
 #include "../utils/returnStructPetsListFromDb.cpp"
 #include "../utils/alterUserData.cpp"
+#include "../utils/alterPetData.cpp"
 
 #endif

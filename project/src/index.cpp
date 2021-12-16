@@ -45,9 +45,15 @@ int main(int argc, char const *argv[])
           case 3:
                updateUser();
                break;
-
           case 4:
                registerPet();
+               break;
+          case 5:
+               updatePet();
+               break;
+
+          case 6:
+               findPetsByUser();
                break;
 
           default:

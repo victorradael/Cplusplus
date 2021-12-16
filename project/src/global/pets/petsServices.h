@@ -3,5 +3,6 @@
 
 #include "../../services/pets/CreatePetService.cpp"
 #include "../../services/pets/FindPetsByOwnerEmailService.cpp"
+#include "../../services/pets/UpdatePetService.cpp"
 
 #endif
